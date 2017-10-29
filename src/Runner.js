@@ -1,7 +1,7 @@
 // @flow
 
 import * as _ from 'lodash'
-import type { ValidationResult, ValidationRule, ValidationRules } from './ValidationTypes'
+import type { ValidationResult, ValidationRule, ValidationRules } from './Types'
 
 export const DEFAULT_INVALID_FIELD_MESSAGE='field is invalid';
 

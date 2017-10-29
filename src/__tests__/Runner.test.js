@@ -1,7 +1,7 @@
 // @flow
 
-import { DEFAULT_INVALID_FIELD_MESSAGE, runRule, runValidations } from '../validationRunner'
-import type { ValidationResult, ValidationRules } from '../ValidationTypes'
+import { DEFAULT_INVALID_FIELD_MESSAGE, runRule, runValidations } from '../Runner'
+import type { ValidationResult, ValidationRules } from '../Types'
 
 const testSubject = {
   a:120,
