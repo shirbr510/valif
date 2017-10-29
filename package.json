@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src/ -d dist/",
     "prepublish": "npm run build",
-    "coverage": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coverage": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js ./node_modules/.bin/codacy-coverage",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "flow": "flow"
@@ -36,12 +36,15 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
+    "codacy-coverage": "^2.0.3",
     "coveralls": "^3.0.0",
     "flow-bin": "^0.57.3",
     "jest": "^21.2.1"
   },
-  "jest":{
-    "modulePathIgnorePatterns": ["dist/"],
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "dist/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 70,
