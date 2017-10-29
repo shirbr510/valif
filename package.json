@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src/ -d dist/",
     "prepublish": "npm run build",
-    "coverage": "npm run coverage:report-coveralls & npm run coverage:report-codacy",
+    "coverage": "npm run coverage:report-coveralls && npm run coverage:report-codacy",
     "coverage:no-report": "node node_modules/.bin/jest --coverage",
     "coverage:report-codacy":"node node_modules/.bin/jest --coverage | ./node_modules/.bin/codacy-coverage",
     "coverage:report-coveralls":"node node_modules/.bin/jest --coverage | ./node_modules/coveralls/bin/coveralls.js",
