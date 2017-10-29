@@ -6,7 +6,9 @@
   "scripts": {
     "build": "babel src/ -d dist/",
     "prepublish": "npm run build",
-    "coverage": "node node_modules/.bin/jest --coverage | ./node_modules/coveralls/bin/coveralls.js",
+    "coverage": "npm run coverage:report-coveralls & npm run coverage:report-codacy",
+    "coverage:report-codacy": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage",
+    "coverage:report-coveralls": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "flow": "flow"
