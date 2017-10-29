@@ -4,6 +4,8 @@
   "description": "Making JS validations as easy as 1-2-3",
   "main": "index.js",
   "scripts": {
+    "build": "babel src/ -d dist/",
+    "prepublish": "npm run build",
     "test": "npm test",
     "flow": "flow"
   },
