@@ -25,6 +25,13 @@ for an example:
 *TBA*
 
 ### OOTB Validations
+*TBA*
+
+## Coming up next
+* thickening of the infrastructure
+* more tests
+* add "binding" of messages with rules
+* improve terminology
 
 
 ## Contributions
