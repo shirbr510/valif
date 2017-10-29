@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-var _Runner = require('../Runner');
+var _Runner = require("../Runner");
 
 var testSubject = {
   a: 120,
