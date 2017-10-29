@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src/ -d dist/",
     "prepublish": "npm run build",
-    "coverage": "node --harmony_proxies node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coverage": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "flow": "flow"
@@ -39,5 +39,8 @@
     "coveralls": "^3.0.0",
     "flow-bin": "^0.57.3",
     "jest": "^21.2.1"
+  },
+  "jest":{
+    "coveragePathIgnorePatterns": ["dist/"]
   }
 }
