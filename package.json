@@ -57,9 +57,6 @@
     "modulePathIgnorePatterns": [
       "dist/"
     ],
-    "testPathIgnorePatterns": [
-      "dist/"
-    ],
     "coverageThreshold": {
       "global": {
         "branches": 70,
