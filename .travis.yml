@@ -1,0 +1,14 @@
+sudo: false
+
+os:
+  - linux
+
+language: node_js
+
+node_js:
+  - "node"
+  - "7"
+  - "6"
+  - "5"
+
+after_success: npm run coverage
