@@ -2,6 +2,6 @@
   "presets": ["env","flow"],
   "ignore": [
     "node_modules",
-    "*/__tests__"
+//    "*/__tests__"
   ]
 }
