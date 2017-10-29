@@ -1,6 +1,5 @@
 // @flow
 
-import * as _ from 'lodash'
 import type { ValidationResult, ValidationRule, ValidationRules } from './Types'
 
 export const DEFAULT_INVALID_FIELD_MESSAGE='field is invalid';
@@ -9,8 +8,8 @@ export const runValidations = (validationRules: ValidationRules = {}, objectToVa
   if(!validationRules){
     return {};
   }
-  return _.reduce(Object.keys(validationRules), (validationObject: ValidationResult, fieldName: string | number) => {
-      const validationError = runRule(validationRules[fieldName], objectToValidate[fieldName])
+  return Object.keys(validationRules).reduce((validationObject: ValidationResult, fieldName: string | number) => {
+      const validationError = runRule(validationRules[fieldName], objectToValidate[fieldName]);
       if (!validationError) {
         delete validationObject[fieldName]
       }
@@ -20,7 +19,7 @@ export const runValidations = (validationRules: ValidationRules = {}, objectToVa
       return validationObject
     }
     , {})
-}
+};
 
 
 export const runRule = (validationRule: ValidationRule, value: any): string => {

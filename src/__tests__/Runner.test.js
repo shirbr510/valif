@@ -7,7 +7,7 @@ const testSubject = {
   a:120,
   b:"120 dollars",
   c: null
-}
+};
 
 describe('runValidations', () => {
 
@@ -32,7 +32,7 @@ describe('runValidations', () => {
     const expectedResult:ValidationResult = {
       b: "invalid",
       c: "invalid",
-    }
+    };
     const result = runValidations(validationRules,testSubject);
     expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
   });
@@ -48,7 +48,7 @@ describe('runValidations', () => {
       b: "invalid",
       c: "invalid",
       d: "invalid",
-    }
+    };
     const result = runValidations(validationRules,testSubject);
     expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
   });
@@ -61,7 +61,7 @@ describe('runValidations', () => {
     const expectedResult:ValidationResult = {
       c: "invalid",
       d: "invalid",
-    }
+    };
     const result = runValidations(validationRules,testSubject);
     expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
   });
@@ -72,7 +72,7 @@ describe('runValidations', () => {
     };
     const expectedResult:ValidationResult = {
       a: "invalid",
-    }
+    };
     const result = runValidations(validationRules,testSubject);
     expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
   });
