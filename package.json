@@ -1,6 +1,6 @@
 {
   "name": "valif",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Making JS validations as easy as 1-2-3",
   "main": "index.js",
   "scripts": {
