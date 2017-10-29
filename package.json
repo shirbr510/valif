@@ -1,0 +1,37 @@
+{
+  "name": "valif",
+  "version": "1.0.0",
+  "description": "Making JS validations as easy as 1-2-3",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirbr510/valif.git"
+  },
+  "keywords": [
+    "js",
+    "validation",
+    "validations",
+    "invalidate",
+    "validate",
+    "validation",
+    "object",
+    "easy",
+    "fluent"
+  ],
+  "author": "Shir Brass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shirbr510/valif/issues"
+  },
+  "homepage": "https://github.com/shirbr510/valif#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.57.3"
+  }
+}
