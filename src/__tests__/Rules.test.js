@@ -1,6 +1,6 @@
 // @flow
 
-import { isEmail, isEmpty, isPassword, isRequired, maxLength, minLength, must, not } from '../Rules'
+import { isEmail, isEmpty, isPassword, isRequired, maxLength, minLength, must, not } from "../Rules"
 
 describe('must validationRule', () => {
 

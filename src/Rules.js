@@ -6,7 +6,7 @@ const _isEmptyObject = (obj: object): boolean => Object.keys(obj).length === 0 &
 
 const _isEmailFormat = (email: string): boolean => {
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regex.test(email)
+  return regex.test(email);
 };
 
 export const must =
@@ -14,12 +14,12 @@ export const must =
     (value: any): boolean =>
       functions.reduce((isValid: boolean, func: ValidationFunction) => {
         if (!isValid) {
-          return false
+          return false;
         }
         if (Array.isArray(func)) {
-          return must(...func)(value)
+          return must(...func)(value);
         }
-        return func(value)
+        return func(value);
       }, true);
 
 export const not =
@@ -35,18 +35,18 @@ export const minLength =
   (length: number): ValidationFunction =>
     (value: string | number): boolean => {
       if (!value) {
-        return false
+        return false;
       }
-      return value && typeof(value) === 'string' ? value.length >= length : minLength(length)(value.toString())
+      return value && typeof(value) === 'string' ? value.length >= length : minLength(length)(value.toString());
     };
 
 export const maxLength =
   (length: number): ValidationFunction =>
     (value: string | number): boolean => {
       if (!value) {
-        return false
+        return false;
       }
-      return value && typeof(value) === 'string' ? value.length <= length : maxLength(length)(value.toString())
+      return value && typeof(value) === 'string' ? value.length <= length : maxLength(length)(value.toString());
     };
 
 export const isEmail = must(not(isEmpty), _isEmailFormat);

@@ -1,7 +1,7 @@
 // @flow
 
-import { DEFAULT_INVALID_FIELD_MESSAGE, runRule, runValidations } from '../Runner'
-import type { ValidationResult, ValidationRules } from '../Types'
+import { DEFAULT_INVALID_FIELD_MESSAGE, runRule, runValidations } from "../Runner"
+import type { ValidationResult, ValidationRules } from "../Types"
 
 const testSubject = {
   a:120,
@@ -34,7 +34,7 @@ describe('runValidations', () => {
       c: "invalid",
     };
     const result = runValidations(validationRules,testSubject);
-    expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
+    expect(Object.keys(result)).toEqual(Object.keys(expectedResult));
   });
 
   test('a: valid, b:invalid, c:invalid, d: invalid', () => {
@@ -50,7 +50,7 @@ describe('runValidations', () => {
       d: "invalid",
     };
     const result = runValidations(validationRules,testSubject);
-    expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
+    expect(Object.keys(result)).toEqual(Object.keys(expectedResult));
   });
 
   test('c:invalid, d: invalid', () => {
@@ -63,7 +63,7 @@ describe('runValidations', () => {
       d: "invalid",
     };
     const result = runValidations(validationRules,testSubject);
-    expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
+    expect(Object.keys(result)).toEqual(Object.keys(expectedResult));
   });
 
   test('a:invalid', () => {
@@ -74,7 +74,7 @@ describe('runValidations', () => {
       a: "invalid",
     };
     const result = runValidations(validationRules,testSubject);
-    expect(Object.keys(result)).toEqual(Object.keys(expectedResult))
+    expect(Object.keys(result)).toEqual(Object.keys(expectedResult));
   });
 
 });
