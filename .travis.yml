@@ -1,14 +1,18 @@
 sudo: false
-
 os:
-  - linux
-
+- linux
 language: node_js
-
 node_js:
-  - "node"
-  - "7"
-  - "6"
-  - "5"
-
+- node
+- '7'
+- '6'
+- '5'
 after_success: npm run coverage
+deploy:
+  provider: npm
+  email: shirbr510@gmail.com
+  api_key:
+    secure: pCQ/fF4dCrhlLc3uJDG1I0WpsBGaYySRFYCo9IMK6w5wjT+Qo8KlFuXGrzmDl2WdBWPbkN9h7EQuCqu2aheVC1+dSEut80H3VvSGisungfNe71paPVGgET7eIHugVIzT6HFrjNXUaBmLjffVSZcICtxEQcOh/nRX7nq2+6hAfCb4bVAjAqA4aXAD2S7ovry6Q2qmFBFjnKBbrX/HUG/CKoJIGt7KLnTxJ0sZFkNYwAJXrVC5DFF1NMuNOMLRpmS2M70H3Pqw/XKprv/q28838e+z86p2BcqV4vBJown2/G6KV1dCWaBRcL/W5aTUIhFuDDKJzHGcAVfL8PHvyH+itIwkI7xfXXWsSXwX7d7dotPJciCBwSJ7JxUe3LWkZob9/QZnrewoidwKjqREj3pE6crvj6+yPNTY9QJiKvPl/fhXSCa4tJ8hbU4Zqx8Ho27B/g+awmwcDNUU9XJc1h4k4GWrzzYGSG+8sn+PufXR3lyoXqwgpmYnNisRhZq+Yt6bRl2+d3BNDoK5QSAldNXCf8M5fweDxW4JnUBktt24zXltrQf+uleMH8K1aQHO7BfImqA7o7wSKFEXVbYh3XSPhYIKu9J1sG+arJQ2m/CVXr4wzJjPGwH8MgeBiH+9wjxGV5NaErDl0RnCNWHJKcyos239mm3/lsifGLCDryxwmN4=
+  on:
+    tags: true
+    repo: shirbr510/valif
