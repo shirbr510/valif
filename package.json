@@ -37,6 +37,7 @@
   "homepage": "https://github.com/shirbr510/valif#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "codacy-coverage": "^2.0.3",
@@ -55,6 +56,9 @@
   },
   "jest": {
     "modulePathIgnorePatterns": [
+      "dist/"
+    ],
+    "testPathIgnorePatterns": [
       "dist/"
     ],
     "coverageThreshold": {
