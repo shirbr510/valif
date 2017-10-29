@@ -1,2 +1,18 @@
+parser: babel-eslint
+parserOptions:
+    ecmaVersion: 7
+    sourceType: module
+extends:
+    - airbnb
+    - 'plugin:flowtype/recommended'
+plugins:
+    - standard
+    - promise
+    - babel
+    - flowtype
+    - jest
 env:
-  es6: true
+    browser: true
+    node: true
+    es6: true
+    jest/globals: true
