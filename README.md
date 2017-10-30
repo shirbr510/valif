@@ -1,6 +1,8 @@
 # Valif - Fluent Validations, easy as 1-2-3
 
 [![npm version](https://badge.fury.io/js/valif.svg)](https://badge.fury.io/js/valif)
+[![Dependencies Status](https://david-dm.org/shirbr510/valif.svg)](https://david-dm.org/shirbr510/valif)
+[![Dev Dependencies Status](https://david-dm.org/shirbr510/valif/dev-status.svg)](https://david-dm.org/shirbr510/valif?type=dev)
 [![Build Status](https://travis-ci.org/shirbr510/valif.svg?branch=master)](https://travis-ci.org/shirbr510/valif)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/70f5f2c832164152a4e2a7d67fdefd8f)](https://www.codacy.com/app/shirbr510/valif?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shirbr510/valif&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/70f5f2c832164152a4e2a7d67fdefd8f)](https://www.codacy.com/app/shirbr510/valif?utm_source=github.com&utm_medium=referral&utm_content=shirbr510/valif&utm_campaign=Badge_Coverage)
