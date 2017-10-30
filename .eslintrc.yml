@@ -3,7 +3,6 @@ parserOptions:
     ecmaVersion: 7
     sourceType: module
 extends:
-    - airbnb
     - 'plugin:flowtype/recommended'
 plugins:
     - standard

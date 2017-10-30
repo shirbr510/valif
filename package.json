@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/ -d dist/",
-    "eslint": "eslint",
     "prepublish": "npm run build",
     "coverage": "npm run coverage:report-coveralls & npm run coverage:report-codacy",
     "coverage:report-codacy": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage",
@@ -37,12 +36,12 @@
   "homepage": "https://github.com/shirbr510/valif#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "codacy-coverage": "^2.0.3",
     "coveralls": "^3.0.0",
     "eslint": "^4.10.0",
-    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-google": "^0.9.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-babel": "^4.1.2",
