@@ -7,6 +7,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/70f5f2c832164152a4e2a7d67fdefd8f)](https://www.codacy.com/app/shirbr510/valif?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shirbr510/valif&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/70f5f2c832164152a4e2a7d67fdefd8f)](https://www.codacy.com/app/shirbr510/valif?utm_source=github.com&utm_medium=referral&utm_content=shirbr510/valif&utm_campaign=Badge_Coverage)
 [![Coverage Status](https://coveralls.io/repos/github/shirbr510/valif/badge.svg)](https://coveralls.io/github/shirbr510/valif)
+[![Known Vulnerabilities](https://snyk.io/test/github/shirbr510/valif/badge.svg)](https://snyk.io/test/github/shirbr510/valif)
 
 ## Getting Started
 
