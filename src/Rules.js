@@ -4,11 +4,6 @@ type ValidationFunction = (value: any) => boolean;
 
 const _isEmptyObject = (obj: object): boolean => Object.keys(obj).length === 0 && obj.constructor === Object;
 
-const _isEmailFormat = (email: string): boolean => {
-  const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regex.test(email);
-};
-
 export const must =
   (...functions: Array<ValidationFunction>): ValidationFunction =>
     (value: any): boolean =>
@@ -48,6 +43,13 @@ export const maxLength =
       }
       return value && typeof(value) === 'string' ? value.length <= length : maxLength(length)(value.toString());
     };
+    
+export const isRegexMatch = regex => value => regex.test(value);
+
+const _isEmailFormat = (email: string): boolean => {
+  const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return isRegexMatch(regex)(email);
+};
 
 export const isEmail = must(not(isEmpty), _isEmailFormat);
 
